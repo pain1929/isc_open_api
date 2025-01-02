@@ -28,7 +28,7 @@ func ISCPost(host *C.char, path *C.char, appKey *C.char, sk *C.char, body *C.cha
 
 	// 构建签名字符串
 	stringToSign := fmt.Sprintf(
-		"POST\n*/*\n\napplication/json\nx-ca-key:%s\n%s",
+		"POST\n*/*\napplication/json\nx-ca-key:%s\n%s",
 		goAppKey, goPath,
 	)
 
