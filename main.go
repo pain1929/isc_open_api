@@ -12,7 +12,6 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"unsafe"
 )
 
 //export ISCPost
