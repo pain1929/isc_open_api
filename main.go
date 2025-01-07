@@ -69,7 +69,7 @@ func ISCPost(host *C.char, path *C.char, appKey *C.char, sk *C.char, body *C.cha
 	// 使用自定义 Transport 创建 http.Client
 	client := &http.Client{
 		Transport: tr,
-		Timeout: 4 * time.Second, // 4秒超时时间
+		Timeout: 4 * time.Second // 4秒超时时间
 	}
 
 	// 发送请求
